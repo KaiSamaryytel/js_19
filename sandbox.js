@@ -1,26 +1,23 @@
-//strings
-console.log('hello, world');
+// template strings
+const title = 'Best reads of 2019';
+const author = 'Kai';
+const likes = 30;
 
-let email = 'minu@email.ee';
-console.log(email);
+// concatenation way
 
-//string concatenation
-let firstName = 'Eesnimi';
-let lastName = 'Perenimi';
+// let result = 'The blog called ' + title + ' by ' + author + ' has ' + likes + ' likes';
+// console.log(result);
 
-let fullName = firstName + ' ' + lastName;
-console.log(fullName);
+// template string way
 
-//getting characters
-console.log(fullName[0]);
+// let result = `The blog called ${title} by ${author} has ${likes} likes`;
+// console.log(result);
 
-//string lenght
-console.log(fullName.length);
+// creating html templates
+let html = `
+  <h2>${title}</h2>
+  <p>By ${author}</p>
+  <span>This blog has ${likes} likes</span>
+`;
 
-// string methods
-console.log(fullName.toUpperCase());
-let result = fullName.toLowerCase();
-console.log(result, fullName);
-
-let index = email.indexOf('@');
-console.log(index);
+console.log(html);
