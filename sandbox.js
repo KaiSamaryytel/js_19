@@ -1,23 +1,28 @@
-// template strings
-const title = 'Best reads of 2019';
-const author = 'Kai';
-const likes = 30;
+// arrays
 
-// concatenation way
+let liblikad = ['admiral', 'riidekoi', 'suur-punasuru'];
 
-// let result = 'The blog called ' + title + ' by ' + author + ' has ' + likes + ' likes';
-// console.log(result);
+// näitab positsiooni. on võimalik asendada.
+// liblikad[1] = 'silmiksuru';
+// console.log(liblikad[1]);
 
-// template string way
+// let vanus = [20, 25, 30, 35];
+// console.log(vanus[2]);
 
-// let result = `The blog called ${title} by ${author} has ${likes} likes`;
-// console.log(result);
+// let random = ['päevapaabusilm', 'nõgeseliblikas', 30, 20];
+// console.log(random);
 
-// creating html templates
-let html = `
-  <h2>${title}</h2>
-  <p>By ${author}</p>
-  <span>This blog has ${likes} likes</span>
-`;
 
-console.log(html);
+// array length
+// console.log(liblikad.length);
+
+// array methods
+
+// let result = liblikad.join(',');
+// let result = liblikad.indexOf('riidekoi');
+// let result = liblikad.concat(['admiral', 'nõgeseliblikas']);
+//let result = liblikad.push('rohetäpik');
+let result = liblikad.pop();
+
+console.log(result);
+console.log(liblikad);
