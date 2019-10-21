@@ -23,10 +23,10 @@ console.log(age < 20);
 console.log(age <= 25);
 console.log(age >= 25);
 
-let name = 'shaun';
+let name = 'mari';
 
-console.log(name == 'shaun');
-console.log(name == 'Shaun');
-console.log(name > 'crystal');
-console.log(name > 'Shaun');
-console.log(name > 'Crystal');
+console.log(name == 'mari');
+console.log(name == 'Mari');
+console.log(name > 'Kristi');
+console.log(name > 'Mari');
+console.log(name > 'Kristi');
