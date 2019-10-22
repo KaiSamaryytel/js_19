@@ -12,9 +12,15 @@ if(liblikad.length > 3){
   console.log("nüüd on küll palju liblikaid");
  }
 
- 
- const salasõna = 'p@ssword';
+ // else statements
 
-if(salasõna.length >= 8){
+ const salasõna = 'p@sswordstrong';
+
+ if(salasõna.length >= 12){
+  console.log('salasõna on väga tugev!');
+
+ } else if(salasõna.length >= 8){
   console.log('salasõna on piisavalt pikk!');
+ } else{
+  console.log('salasõna ei ole piisavalt pikk!');
 }
