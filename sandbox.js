@@ -1,15 +1,15 @@
-// for loops
-// loop lõppu ;-ei käi!
-for(let i = 0; i < 5; i++){
-  console.log('loop: ', i);
-}
-
-console.log('loop finished');
-
+// while loops
+// loop lõppu } ;-ei käi!
 const names = ['mari', 'jüri', 'kristi'];
+// let i = 0;
 
-for(let i = 0; i < names.length; i++){
+// while(i < 5){
+//   console.log('loop: ', i);
+//   i++;
+// }
+
+let i = 0;
+while(i < names.length){
   console.log(names[i]);
-  let html = `<div>${names[i]}</div>`;
-  console.log(html);
+  i++;
 }
