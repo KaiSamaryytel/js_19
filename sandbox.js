@@ -1,37 +1,20 @@
-// switch statements
-const hinne = 'D';
+// variables & block scope
+let age = 30;
 
-switch(hinne){
-  case 'A':
-    console.log('Said hindeks A!');
-    break;
-  case 'B':
-    console.log('Said hindeks B!');
-    break;
-  case 'C':
-    console.log('Said hindeks C!');
-    break;
-  case 'D':
-    console.log('Said hindeks D!');
-    break;
-  case 'E':
-    console.log('Said hindeks E!');
-    break;
-  default:
-    console.log('Tundmatu');
+if(true){
+
+  // age = 40;
+  let age = 40;
+  let name = 'Alice Cooper';
+  console.log('Esimese koodiploki sees:', age, name);
+
+  if(true){
+
+    let age = 50;
+    console.log('Teise koodiploki sees:', age, name);
+
+  }
+
 }
 
-// using if statements
-// if(hinne === 'A'){
-
-// } else if(hinne === 'B'){
-
-// } else if(hinne === 'C'){
-
-// } else if(hinne === 'D'){
-
-// } else if(hinne === 'E'){
-
-// } else {
-
-// }
+console.log('Koodiplokist väljas:', age, name);
