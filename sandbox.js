@@ -1,12 +1,10 @@
- // logical operators - OR || and AND &&
+// Logical NOT (!)
+const user = false;
 
- const salasõna = 'p@ssword';
-
- if(salasõna.length >= 12 && salasõna.includes('@')){
-  console.log('salasõna on väga tugev!');
-
- } else if(salasõna.length >= 8 || salasõna.includes('@')){
-  console.log('salasõna on piisavalt tugev!');
- } else{
-  console.log('salasõna ei ole piisavalt tugev!');
+if(!user){
+  // do something
+  console.log('Jätkamiseks pead olema sisse logitud!');
 }
+
+console.log(!true);
+console.log(!false);
