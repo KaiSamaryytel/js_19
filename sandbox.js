@@ -1,11 +1,8 @@
-// arguments & parameters
-// expressionile läheb ;-lõppu!
-const tervitus = function(name = 'Kati', time = 'hommikust'){
-  console.log(`Tere ${time}, ${name}!`);
+// returning statements
+
+const calcArea = function(radius){
+  return 3.14 * radius**2;
 };
 
-tervitus('Mati');
-tervitus();
-tervitus('Malle', 'päevast');
-
-
+const area = calcArea(5);
+console.log('Area is:', area);
