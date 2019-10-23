@@ -1,19 +1,11 @@
-// function declaration
-function tervitus(){
-  console.log('Tere hommikust!');
-}
-
-
-// function expression
-// expressionil eläheb ;-lõppu!
-const jutt = function(){
-  console.log('Head päeva!');
-
+// arguments & parameters
+// expressionile läheb ;-lõppu!
+const tervitus = function(name = 'Kati', time = 'hommikust'){
+  console.log(`Tere ${time}, ${name}!`);
 };
 
+tervitus('Mati');
 tervitus();
-jutt();
-tervitus();
-jutt();
-tervitus();
-jutt();
+tervitus('Malle', 'päevast');
+
+
